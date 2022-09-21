@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(39, 37, 37);
+    font: normal 20ptbr arial;
+    color:bisque;
+    text-align: center;
+}
+h2{
+    font: normal 15ptbr arial;
+    color:rgb(22, 29, 36);
+    text-align: center;
+    background-color: rgb(212, 203, 203);
+    width: 150;
+    margin: auto;
+    padding: 15px;
+
+}

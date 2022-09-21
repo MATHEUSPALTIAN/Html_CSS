@@ -1,0 +1,51 @@
+body{
+    background-image: linear-gradient(to left, #C4EEF2, #7AB8BF, #3E848C);
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    background-color: #C4EEF2;
+    text-align: center;
+    font-size: 2.5em;
+    color: #A67458;
+}
+h2#nome{
+    background-color: #C4EEF2;
+    width: 400px;
+    padding: 22px;
+    margin: auto; 
+    border-radius: 10px;
+    box-shadow: 5px, 5px, 10px, #A67458;
+}
+h2#foto{
+    text-align: center;
+}
+h2{
+    font-size: 2em;
+    color: #5f4d46a9;
+    text-align: center;
+}
+h3#contato{
+    color: black;
+    background-color: #C4EEF2;
+    width: 400px;
+    font-size: 1.5em;
+
+}
+h3{
+    text-align: justify;
+
+}
+a{
+    text-decoration: none;
+    color: #A67458;
+    background-color: #C4EEF2;
+    border-radius: 10px;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+a::after{
+    content: " ←";
+}

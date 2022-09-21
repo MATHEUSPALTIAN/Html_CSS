@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+h2{
+    font-family: 'Bungee Spice',sans-serif;
+}
+
+@font-face{
+    font-family: 'fontdepokemon';
+    src: url('fonts/Pokemon\ Hollow.ttf') format('truetype');
+}
+a:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+p{
+    font-family: 'fontdepokemon',sans-serif;
+    font-size: 2em;
+}
