@@ -1,0 +1,86 @@
+@charset "UTF-8";
+*{
+    margin:0px;
+    padding: 0px;
+}
+:root{
+    --cor1:#1d1a1ae8;
+    --cor2:#191b1be5;
+    --cor3:#5d75759d;
+    --cor4:#e4f0f0;
+    --fontpadrao: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor2), var(--cor4));
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+body{
+    background-image: linear-gradient(to left, var(--cor1), var(--cor2), var(--cor1));
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:10px;
+}
+section{
+    background-color: var(--cor4);
+    width: 800px;
+    height: 700px;
+    padding: 25px;
+    border-radius: 10px;
+    margin: auto;
+
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+    color: #383330;
+    margin: 10px;
+}
+h2#nome{
+    background-color: #353838;
+    width: 400px;
+    padding: 22px;
+    margin: auto; 
+    border-radius: 10px;
+    box-shadow: 5px, 5px, 10px, #f7f4f3;
+    color: white;
+}
+h2#foto{
+    text-align: center;
+}
+p{
+    margin:15px;
+    color: white;
+    text-align: center;
+}
+h2{
+    font-size: 2em;
+    color: #5f4d46a9;
+    text-align: center;
+    margin: 20px;
+}
+h3#contato{
+    color: black;
+    background-color: #C4EEF2;
+    width: 400px;
+    font-size: 1.5em;
+
+}
+h3{
+    text-align: justify;
+
+}
+a{
+    text-decoration: none;
+    color: #A67458;
+    border-radius: 10px;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+a::after{
+    content: " ←";
+}

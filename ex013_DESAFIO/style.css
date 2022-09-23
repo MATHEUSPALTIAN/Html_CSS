@@ -39,6 +39,7 @@ body{
     background-image: linear-gradient(to left, var(--cor1), var(--cor2), var(--cor3))
 }
 header{
+
     padding: 40px;
     background-color: var(--cor2);
     color: white;
