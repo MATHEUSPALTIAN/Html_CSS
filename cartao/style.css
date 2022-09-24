@@ -75,7 +75,7 @@ main.main{
     box-shadow: 5px 5px 8px rgba(245, 241, 241, 0.623);
     border: 0.1px solid rgba(175, 173, 173, 0.486);
     font-family: var(--fonte2);
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -95,7 +95,7 @@ main.main{
 }
 .content .d001{
     display: inline-block;
-    width: 280px;
+    width: 285px;
 }
 .content .d002{
     display: inline-block;
