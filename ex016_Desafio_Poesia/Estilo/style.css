@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+:root{
+    --fonte1: "Cardo", serif;
+    --fonte2: "Quicksand", sans-serif;
+    --fonte3: "Teko", sans-serif;
+}
+header{
+  background-color: rgba(231, 229, 229, 0.938);
+    text-align: center;
+
+}
+header > h1{
+    font-family: var(--fonte3);
+    font-size: 5vw;
+    color: rgb(7, 5, 5);
+    padding-top: 10px;
+}
+header > p{
+    font-size: 3vw;
+    color: rgb(3, 3, 3);
+    padding: 7px;
+    font-family: var(--fonte1);
+}
+
+
+section#img01{
+    background-image: url("../imagens/pexels-kübra-arslaner-13495232\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: var(--fonte2);
+    font-weight: bold;
+}
+section#img02{
+    background-image: url("../imagens/pexels-linda-gschwentner-11430280.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+section.normal > p {
+    color: rgb(10, 10, 10);
+    margin: auto;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-bottom: auto;
+    display: inline-block;
+    font-size: 3vw;
+    background-color: rgba(31, 30, 30, 0.055);
+
+}
+section.imagem {
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    color: rgba(10, 10, 10, 0.973);
+    margin: auto;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-bottom: auto;
+    background-color:rgba(10, 10, 10, 0.103);
+    display: inline-block;
+    font-size: 3vw;
+
+}
