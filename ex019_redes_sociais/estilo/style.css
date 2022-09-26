@@ -56,3 +56,66 @@ section#fotos > img:hover{
     box-shadow: 1px 1px 5px black;
     transition: 0.5s;
 }
+
+@media only screen and (min-width:321px) and (max-width:480px){
+    section#primeiro{
+        position: relative;
+        left: 64%;
+        width: 350px;
+        height: 400px;
+        background-image: url(../imagens/frame-iphone.png);
+        background-repeat: no-repeat;
+        background-size: 200px;
+
+    }iframe{
+        top: 53px;
+        left: 15px;
+        width: 166px;
+        position: relative;
+        height: 300px;
+    }section#fotos{
+        display: inline;
+        text-align: right;
+        position: absolute;
+        top: 85%;
+        left: 8%
+    }section#fotos > a> img{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.685);
+    }
+}
+@media only screen and (min-width:0px) and (max-width:321px){
+    section#primeiro{
+        position: relative;
+        left: 69%;
+        top: 45%;
+        width: 350px;
+        height: 400px;
+        background-image: url(../imagens/frame-iphone.png);
+        background-repeat: no-repeat;
+        background-size: 200px;
+
+    }iframe{
+        top: 53px;
+        left: 15px;
+        width: 166px;
+        position: relative;
+        height: 300px;
+    }section#fotos{
+        display: inline;
+        text-align: right;
+        position: absolute;
+        top: 85%;
+        left: 15%
+    }section#fotos > a> img{
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.685);
+    }
+}
+    
