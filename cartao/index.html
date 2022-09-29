@@ -58,23 +58,23 @@
       <section class="fundo1">
         <section class = 'secao2'>
           <div class="dados1">
-            CARD Name
+            <label for="botao1">CARD Name</label>
           </div>
-          <input type="text" name="" class="secao3"  id="botao1">
+          <input type="text" name="" class="secao3"  id="botao1"  placeholder="CARD NAME" autocomplete="name">
           <div class="dados1">
-            CARD Number
+            <label for="botao2">CARD Number</label>
           </div>
-          <input type="text" name="" class="secao3" id="botao2">
+          <input type="text" name="" class="secao3" id="botao2" placeholder="XXXX-XXXX-XXXX-XXXX" pattern="\d{4}-\d{4}-\d{4}-\d{4}">
           <div id="d01">
-            EXP.Date(MM/YY)
+            <label for="botao3">EXP</label><label for="botao4">.Date(MM/YY)</label>
           </div>
           <div id="d02">
-            CVC
+            <label for="botao5">CVC</label>
           </div>
           <section class="secao3">
-            <input type="text" name="" id="botao3">
-              <input type="text" name="" id="botao4">
-              <input type="text" name="" id="botao5">
+            <input type="text" name="" id="botao3" placeholder="Month">
+              <input type="text" name="" id="botao4" placeholder="Year">
+              <input type="text" name="" id="botao5" placeholder="CVC">
           </section>
           <input type="button" id= "confirmar" value="confirmar" onclick="confirmar()">
         </section>

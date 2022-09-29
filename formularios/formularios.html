@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <label for="inome">Nome</label><input type="text" name="nome" id="inome" autocomplete="name" required placeholder="Nome" list="iop">
+        <br><br><label for="inome">Nota</label><input type="number" name="média" id="imedia" required min="0" max="10" step="0.5" placeholder="nota">
+        <br><br><label for="inome">Data</label><input type="date" >
+        <br><br><label for="inome">Telefone</label><input type="tel" name="telone" id="itelefone" placeholder="0000-0000" pattern="\d{4}-\d{4}">
+        <datalist id="iop">
+            <option>Matheus</option>
+            <option>Lucas</option>
+            <option>Gi</option>
+            <option>Marcos</option>
+
+        </datalist>
+        <p><fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="basquete" id="ibasquete"><label for="ibasquete">Basquete</label>
+            <input type="checkbox" name="lutas" id="ilutas"><label for="ilutas">Lutas</label>
+            <input type="checkbox" name="Handball" id="iHandball"><label for="iHandball">Handball</label>
+            <input type="checkbox" name="volei"id="ivolei"><label for="ivolei">Volei</label>
+            <input type="checkbox" name="futebol" id="ifutebol"><label for="ifutebol">futebol</label>
+
+        </fieldset></p>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc"><label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
+           
+        </fieldset>
+                <label for="inumr">Satisfação</label>
+                <input type="range" name="satisfacao" id="isatis" min="1" max="5" value="5" oninput="ival.innerHTML = Number(inumr.value)">
+
+                <output id="ival">5</output>
+        
+        <p> 
+            <label for="ifoto">foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <p>
+            <label for="iestados">Estados</label><select name="estados" id="iestados">
+                <optgroup label="Regiao Não sei">
+                    <option value="RS">Rio grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="imens">Mensagem</label><br>
+                <textarea name="mensagem" id="imens" cols="30" rows="10"></textarea>
+            </p>
+            
+        </p>
+
+    </form>
+    
+</body>
+</html>

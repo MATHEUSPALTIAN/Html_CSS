@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+*{padding: 0px;
+margin: 0px;
+font-family: 'Courier New', Courier, monospace;}
+
+menu{
+    display: none;
+}
+
+h1{
+    text-align: center;
+}
+
+article{
+    font-size: 1.3em;
+    width: 600px;
+    margin: 60px;
+}
+article::after{
+    content: "Este artigo foi escrito por Matheus Paltian ";
+}

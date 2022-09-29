@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+section{
+    background-image: url(../math.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: center center;
+    margin: 0px;
+}
+h1{
+    font-size: 2em;
+}
