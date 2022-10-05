@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        }
+    img#iphone{
+        display: none;
+    }
+    img#iprint{
+        display: block;
+        margin-left: 0px;
+    }
+    main{
+        border: solid black;
+    }
+    main::after{
+        content: "Esta impressão foi efetuada através do site ....";
+    }
+}
+
+
+@media screen and (min-width:767px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+        }
+    h1{
+        text-align: center;
+        font-size: 2em;
+        color: rgb(240, 240, 240);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.849);
+        }
+    main{
+        font-size: 1.0em;
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    img#iphone{
+        display: none;
+        margin-left: -12px;
+    }
+    img#itablet{
+        display: block;
+        margin-left: 82px;
+    }
+
+
+}
+    
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+        }
+    h1{
+        text-align: center;
+        font-size: 3em;
+        color: rgb(240, 240, 240);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.849);
+        }
+    main{
+        font-size: 1.0em;
+        width: 600px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    img#iphone{
+        display: none;
+    }
+    img#ipc{
+        display: block;
+        margin-left: 190px;
+    }
+
+
+}
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+        }
+    h1{
+        text-align: center;
+        font-size: 3em;
+        color: rgb(240, 240, 240);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.849);
+        }
+    main{
+        font-size: 1.0em;
+        width: 900px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    img#iphone{
+        display: none;
+    }
+    img#ipc{
+        display: none;
+    }
+    img#itv{
+        display: block;
+        margin-left: 330px;
+    }
+
+
+}
+    

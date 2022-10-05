@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+:root{
+    --color1: #3791b9;
+    --color2: #9bdcf9;
+    --color3: #045a8d;
+    --color4: #578caf;
+    --color5: #adc0c7;
+    --color6: #34CBD1;
+    --color7: #32C7A3;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+@media screen and (min-width:600px) and (max-width:1366px){
+    /* TABLET */
+
+    h1{
+        font-size: 2em;
+    }
+    body{
+        background-image: linear-gradient(var(--color3), var(--color1));
+    }
+    main.menu{
+        width: 550px;
+        height: 600px;
+        background-color: rgba(255, 255, 255, 0.849);
+    }
+    section > main.menu > div#imagemfundo{
+        background-image: url(../imagens/fundo.jpg);
+        background-position: left bottom;
+        height: 300px;
+        }
+    section > main.menu > div#dados > div#login{
+        background-color: white;
+        border-radius: 10px;
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 120px;
+    }
+    section > main.menu > div#dados > div#senha{
+        background-color: white;
+        width: 100px;
+        border-radius: 10px;
+        margin-left: 120px;
+
+    }
+    .dadoslogin{
+        background-color: var(--color5);
+        padding: 14px;
+        line-height: 1px;
+        color: black;
+        width: 250px;
+        border: none;
+    }
+    section > main.menu > div#dados > div#ent > input#entrar{ 
+        margin-left: 180px;
+        padding: 10px;
+    }
+    
+    section > main.menu > div#dados > div#esqsenha > input#iesqueci{ 
+        margin-top: 10px;
+        margin-left: 190px;
+        border-radius: 4px;
+        background-color: var(--color4);
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width:1366px){
+    /* pc */
+    h1{
+        font-size: 3em;
+    }
+    body{
+        background-image: linear-gradient(var(--color2), var(--color4), var(--color4));
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main.menu{
+        width: 1200px;
+        height: 700px;
+        background-color: rgba(255, 255, 255, 0.849);
+    }
+    section > main.menu > div#imagemfundo{
+        height: 700px;
+        width: 600px;
+        display: inline-block;
+        position: relative;
+        }
+    h1{
+        position: absolute;
+        top:3%;
+        left: 70%;
+        font-size: 3em;
+    
+    }
+    div#dados{
+        display: inline-block;
+        position: absolute;
+        top:40%;
+        left: 50%;
+    }
+    section > main.menu > div#dados > div#login{    
+        display: inline-block;
+        background-color: white;
+        border-radius: 20px;
+        width: 150px;
+        margin-left: 120px;
+        font-size: 1.5em;
+    }
+    section > main.menu > div#dados > div#senha{
+        display: inline-block;
+        background-color: white;
+        border-radius: 20px;
+        width: 150px;
+        margin-left: 120px;
+        font-size: 1.5em;
+
+    }
+    .dadoslogin{
+        background-color: var(--color5);
+        padding: 10px;
+        line-height: 1px;
+        color: black;
+        width: 250px;
+        font-size: 1.5em;
+        border: none;
+    }
+    section > main.menu > div#dados > div#ent > input#entrar{ 
+        margin-top: 70px;
+        width: 300px;
+        margin-left: 155px;
+        padding: 15px;
+        font-size: 1.5em;
+    }
+    
+    section > main.menu > div#dados > div#esqsenha > input#iesqueci{ 
+        margin-top: 10px;
+        width: 300px;
+        margin-left: 155px;
+        border-radius: 4px;
+        background-color: var(--color4);
+        padding: 10px;
+        font-size: 1.5em;
+
+    }
+    }
