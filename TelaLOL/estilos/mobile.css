@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width:200px) and (max-width:414px){
+@media screen and (min-width:200px) and (max-width:550px){
     /* CELULARES */
     main{
         display: flex;
