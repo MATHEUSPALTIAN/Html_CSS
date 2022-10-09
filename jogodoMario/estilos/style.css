@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+div.gameboard{
+    width: 100vw;
+    height: 900px;
+    border-bottom: 20px solid green;
+    margin: auto;
+    background-image: linear-gradient(rgb(161, 225, 245), white) ;
+    position: relative;
+    overflow: hidden; /*Para deixar escondido td que nao ta na div */
+
+}
+.pipe{
+    position: absolute;
+    width: 100px;
+    bottom: 0px;
+    animation: animation_pipe 2s infinite linear; /*Para ter animacao e ser de forma linear */
+}
+@keyframes animation_pipe{
+    from{right: -100px;}
+
+    to {right: 100%;}
+}
+.mario{
+    position: absolute;
+    width: 175px;
+    bottom: 0;
+}
+.jump{
+    animation: animation_mario 500ms  ease-out;
+}
+@keyframes animation_mario{
+    0%{bottom: 0px;}
+    40% {bottom: 250px;}
+    50% {bottom: 250px;}
+    60% {bottom: 250px;}
+    100% {bottom: 0px;}
+}
+
+.clouds{
+    position: absolute;
+    width: 800px;
+    animation: animation_clouds 14s infinite linear;
+}
+
+@keyframes animation_clouds{
+    from{right: -800px;}
+    to {right: 100%;}
+}

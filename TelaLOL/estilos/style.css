@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+:root{
+    --white: #FFF;
+    --whitesmoke: #F9F9F9;
+    --light-grey: #ECECEC;
+    --grey: #C4C4C4;
+    --medium-grey: #A7A7A7;
+    --deep-grey: #343434;
+    --black: #000000;
+    --blue: #1B77F3;
+    --red: #CF3C3F;
+      
+}
+
+main{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+main > section.login{
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 92vh;
+    background-color: var(--white);
+    padding: clamp(35px, 8%, 50px);
+}
+
+main > section.login h1{
+    color: var(--red);
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+main > section.wallpaper{
+    width: 100vw;
+    height: 100vh;
+}
+div.dadoslogin{
+    font-size: 1.6em;
+}
+
+label.loginlabel span {         
+    color: var(--medium-grey);
+    font-weight: 700;
+    position: absolute;
+    cursor: text;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin: 30px;
+    transition: all 200ms ease;
+}
+label.loginlabel span.inputanimation{
+    font-size: 0.75em;
+    padding: 1px;
+    margin: 2px;
+}
+
+div.logo{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+img#logo{
+    left: 10px;
+    width: 350px;
+}
+
+
+
+.iconbuttons:nth-child(1){
+   background-color: #1B77F3;
+}   
+ .iconbuttons:nth-child(3){
+    background-color: var(--black);
+ }   
+
+.input{
+    width: 95%;
+    padding: 30px;
+    border: 2px transparent;
+    background-color: var(--light-grey);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.input:focus{
+    background-color: var(--whitesmoke);
+    color: #000000;
+    font-size: 1em;
+    border: 2px solid black;
+}
+div.button{
+    display: flex;
+    width: 90%;
+    gap: 10px;
+    margin-top: 50px;
+    margin-left: 15px;
+
+}
+div.button img{
+    width: 40px;
+    height: 40px;
+}
+
+.iconbuttons{
+    width: 33.33%;
+    border-radius: 5px;
+    height: 60px;
+    border: none;
+    text-align: center;
+    align-items: center;
+
+}   
+
+main > section > div.checkbox{
+    
+    margin-top: 20px;
+    font-size: 1.4em;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    
+}
+
+.ccheck{
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: var(--light-grey);
+    margin-left: 15px;
+}
+.ccheck:checked{
+    background-color: var(--red);
+}
+.ccheck:checked::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 10px solid var(--white);
+    border-width: 0 4px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 8px;
+}
+section.wallpaper{
+    background-image: url(../imagens/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.ent{
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+.entrar{
+    width: 150px;
+    height: 70px;
+    background-color: #CF3C3F;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+.entrar:disabled{
+    background-color: var(--light-grey);
+}

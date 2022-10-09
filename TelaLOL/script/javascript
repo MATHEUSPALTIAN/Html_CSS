@@ -1,0 +1,64 @@
+let inputs = document.querySelectorAll('.span')
+let inputs2 = document.querySelectorAll('.input')
+
+/*  inputs.forEach((input) => input.addEventListener('focus', handlefocus)); */
+
+inputs2[0].addEventListener("click", clicarinput0) 
+inputs2[1].addEventListener("click", clicarinput) 
+
+inputs2[0].addEventListener("focusout", clicarfora0) 
+inputs2[1].addEventListener("focusout", clicarfora) 
+
+    function clicarinput0(){
+        inputs[0].classList.add("inputanimation")
+    }function clicarinput(){
+        inputs[1].classList.add("inputanimation")
+
+    }function clicarfora0(){
+        let input1 = document.querySelector("#iusername").value;
+        if (input1 === ""){
+            inputs[0].classList.remove("inputanimation")
+    }}function clicarfora(){
+        let input2 = document.querySelector("#ipassword").value;
+        if (input2 === ""){
+            inputs[1].classList.remove("inputanimation")
+        }}
+
+    inputs2[1].addEventListener("input", liberar) 
+    
+    function liberar(){
+   // var button = document.getElementById("buttonentrar").value;
+    let input1 = document.querySelector("#iusername").value;
+    let input2 = document.querySelector("#ipassword").value;
+    if (input1.length >= 5 && input2.length>=8){    
+        document.getElementById('buttonentrar').disabled = false;}
+    else{
+        document.getElementById('buttonentrar').disabled = true;
+    }
+
+    }
+    
+ /*   const buttons = document.querySelectorAll('.btn');
+
+    for (const button of buttons) {
+      // ✅ Set the disabled attribute
+      button.setAttribute('disabled', '');
+    
+      // ✅ Remove the disabled attribute
+      // button.removeAttribute('disabled');
+    }
+} 
+*/
+
+/* var fruits = ["apple", "orange", "cherry"];
+fruits.forEach(getArrayValues);
+
+function getArrayValues(item, index) {
+  console.log( index + ":" + item);
+}
+*/
+
+/*  element.addEventListener("click", function() {
+    document.getElementById("demo").innerHTML = "Hello World";
+    }); 
+*/
