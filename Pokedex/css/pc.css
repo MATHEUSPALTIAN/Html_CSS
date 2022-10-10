@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width:1300px) {
+    main > img.pokedex{
+        width: 200%;
+        max-width: 600px;
+    }
+    
+    main > section > img.pokemon_img{
+        width: 30%;
+        position: absolute;
+        top: 35%;
+        left: 59%;
+        transform: translate(-35%, -15%);
+    }
+    
+main > section > h1{
+    left: 44%;
+    font-size: clamp(25px, 6vw, 35px);
+}
+main > section > form.pesquisar{
+    top: 66%;
+    left: 20%;
+}
+main > section > form > input.send{
+    font-size: clamp(15px, 5vw, 15px);
+    font-weight: 800;
+    color: rgb(39, 34, 34);
+}
+    
+main > section > div.button{
+    position: absolute;
+    top: 85%;
+    left: 28%;
+    width: 75%;
+    gap: 20%;
+}
+
+main > section > div > button.prev{
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+main > section > div > button.next{
+    font-size: clamp(8px, 5vw, 25px);
+}
+}

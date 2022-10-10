@@ -4,6 +4,7 @@ cursodehtml
 
 <br>
 <a href="https://matheuspaltian.github.io/Html_CSS/Pokedex/index.html" target="_blank"> Pokedex</a>
+<br>
 
 <a href="https://matheuspaltian.github.io/Html_CSS/jogodoMario/mario.html" target="_blank"> Jogo do Mario</a>
 

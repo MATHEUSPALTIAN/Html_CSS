@@ -92,6 +92,11 @@ main > section > form > input.search{
     color: rgb(39, 34, 34);
 }
 
+.send:active{
+    box-shadow: inset -12px 4px 0 --cinza;;
+    font-size: clamp(7px, 4.5vw, 13px);
+    transform: translate(-3%);
+}
 main > section > div.button{
     position: absolute;
     top: 85%;

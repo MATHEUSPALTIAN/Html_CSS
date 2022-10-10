@@ -10,14 +10,21 @@ let id_do_pok = 1
 async function buscar_pok(pokemon){
     let search = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`
     )
-    let dados = await search.json();
     // -----Pego os dados da API e leio com o JSON
 
-    console.log(dados);
-    nome_pok.innerHTML = dados.name;
-    id_pok.innerHTML = dados.id;
-    img_pok.src = dados["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
-    id_do_pok = dados.id //assim se torna uma variavel global
+    console.log(search)
+    if (search.status === 200){
+        let dados = await search.json();
+        nome_pok.innerHTML = dados.name;
+        id_pok.innerHTML = dados.id;
+        img_pok.src = dados["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
+        id_do_pok = dados.id //assim se torna uma variavel global
+    }else{
+        nome_pok.innerHTML = 'Not Found :C';
+        id_pok.innerHTML = '';
+        img_pok.style.display = 'none';
+    }
+
 }
 
 function executar(){
