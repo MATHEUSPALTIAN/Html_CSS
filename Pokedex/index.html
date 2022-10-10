@@ -10,8 +10,44 @@
 </head>
 <body>
     <main>
-        <img src="imagens/pokedex.png" alt="">
+        <img src="imagens/pokedex.png" alt="Pokedex" class="pokedex">
+            <section>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/1.png" alt="pokemon" class="pokemon_img">
+
+                <h1>
+                    <span class="span id" id="spanid">1</span>
+                    <span >-</span>
+                    <span class="span nome">bulbasaur</span>
+
+                </h1>
+                
+                <form class="pesquisar">
+                    
+                    <input
+                    type="text"
+                    class="search"
+                    name="pesquisar"
+                    id="ipesq"
+                    placeholder="Name or Number"
+                    required>
+                    <input 
+                    class="send"
+                    type="button" value="Send"
+                    onclick="executar()">
+                </form>
+
+                <div class="button">
+                    <button 
+                    type="button"
+                    class="butt prev" onclick="carregarant()">
+                    Prev &lt;	</button>
+
+                    <button 
+                    type="button" 
+                    class="butt next" onclick="carregarprox()">Next &gt;	</button>
+                </div>
+            </section>
     </main>
-    
+    <script src="Js/script.js"></script>
 </body>
 </html>

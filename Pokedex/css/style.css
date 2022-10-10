@@ -6,7 +6,128 @@
     box-sizing: border-box;
 }
 
+:root{
+    --vermelho_escuro: #8C0738;
+    --vermelho_claro: #D90D58;
+    --azul_claro: #11C5D9;
+    --verde-claro: #49F262;
+    --cinza: #E3E3E3;
+    --amarelo: #F2D377;
+}
+
+body{
+    text-align: center;
+
+    background-image: linear-gradient(to bottom, rgb(91, 142, 218), white);
+    height: 100vh;
+}
 main{
-    background-color: red;
     display: inline-block;
+    margin-top: 2%;
+    padding: 15px; /* Para dar um espaco */
+    position: relative;
+
+}
+main > img.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+
+main > section > img.pokemon_img{
+    position: absolute;
+    top: 37%;
+    left: 39%;
+    transform: translate(-15%, -10%);
+}
+
+main > section > h1{
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    font-size: clamp(15px, 6vw, 25px);
+    color: rgba(41, 38, 38, 0.918);
+    text-transform: capitalize;
+}
+main > section > h1 > span.id{
+    color: gray;    
+}
+main > section > h1 > span.nome{
+    text-transform: capitalize;
+}
+main > section > form.pesquisar{
+    position: absolute;
+    top: 66%;
+    left: -2%;
+    height: 7%;
+    width: 58%;
+}
+main > section > form > input.send{
+    position: absolute;
+    left: 115%;
+    top: -1%;
+    width: 25%;
+    height: 110%;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #3333;
+    box-shadow: -3px 2px 0 rgb(97, 95, 95),-5px 4px 0 rgb(14, 13, 13);
+    padding: 3%;
+    font-size: clamp(8px, 5vw, 15px);
+    font-weight: 800;
+    color: rgb(39, 34, 34);
+}
+
+main > section > form > input.search{
+    position: absolute;
+    left: 25%;
+    width: 86%;
+    height: 110%;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #3333;
+    box-shadow: -3px 2px 0 rgb(97, 95, 95),-5px 4px 0 rgb(14, 13, 13);
+    padding: 3%;
+    font-size: clamp(8px, 5vw, 15px);
+    font-weight: 700;
+    color: rgb(39, 34, 34);
+}
+
+main > section > div.button{
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    height: 6%;
+    display: flex;
+    width: 45%;
+    gap: 20%;
+ 
+}
+
+
+main > section > div > button.prev{
+    width: 45%;
+    border-radius: 6px;
+    border: 1px solid #3333;
+    background-color: rgba(37, 36, 36, 0.849);
+    box-shadow: -3px 4px 0 rgb(92, 91, 91), -5px 5px 0 black;
+    font-size: clamp(8px, 5vw, 15px);
+    font-weight: 700;
+    color:white;
+
+}
+
+main > section > div > button.next{
+    width: 45%;
+    border-radius: 6px;
+    border: 1px solid #3333;
+    background-color: rgba(37, 36, 36, 0.849);
+    box-shadow: -3px 4px 0 rgb(92, 91, 91), -5px 5px 0 black;
+    font-size: clamp(8px, 5vw, 15px);
+    font-weight: 700;
+    color:white;
+}
+
+.butt:active{
+    box-shadow: inset -4px 4px 0 rgba(37, 36, 36, 0.849);;
+    font-size: clamp(7px, 4.5vw, 13px);
 }
